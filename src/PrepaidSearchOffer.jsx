@@ -1,4 +1,4 @@
-import React, { useEffect, useId, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { IconLeft, IconRight } from '@arco-design/web-react/icon';
 import { PREPAID_LOAD_URL, PREPAID_VALIDITIES } from './searchProducts';
 import './prepaid-search-offer.css';
@@ -11,37 +11,13 @@ const PACKAGE_BADGES = {
 
 export default function PrepaidSearchOffer({ tier }) {
   const trackRef = useRef(null);
-  const trackId = useId();
-  const [position, setPosition] = useState({ visible: 3, atStart: true, atEnd: false });
-
-  useEffect(() => {
-    const track = trackRef.current;
-    const measure = () => {
-      const step = track.children[1].offsetLeft - track.children[0].offsetLeft;
-      setPosition({
-        visible: Math.max(1, Math.round((track.clientWidth + 12) / step)),
-        atStart: track.scrollLeft < 2,
-        atEnd: track.scrollLeft + track.clientWidth >= track.scrollWidth - 2,
-      });
-    };
-    const observer = new ResizeObserver(measure);
-    observer.observe(track);
-    track.addEventListener('scroll', measure, { passive: true });
-    measure();
-    return () => { observer.disconnect(); track.removeEventListener('scroll', measure); };
-  }, []);
-
-  const move = (direction) => {
-    const track = trackRef.current;
-    const step = track.children[1].offsetLeft - track.children[0].offsetLeft;
-    track.scrollBy({ left: direction * step * position.visible, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
-  };
+  const move = (direction) => trackRef.current?.scrollBy({ left: direction * 300, behavior: 'smooth' });
 
   return (
     <div className="prepaid-search-offer">
-      <div className="prepaid-search-offer__carousel" role="region" aria-label={`${tier.speed} load packages`} aria-roledescription="carousel">
-        <button className="prepaid-search-offer__arrow prepaid-search-offer__arrow--previous" type="button" aria-label="Previous load packages" aria-controls={trackId} disabled={position.atStart} onClick={() => move(-1)}><IconLeft aria-hidden="true" /></button>
-        <div ref={trackRef} id={trackId} className="prepaid-search-offer__track" role="list">
+      <div className="prepaid-search-offer__carousel" role="region" aria-label={`${tier.speed} load packages`}>
+        <button className="prepaid-search-offer__arrow" type="button" aria-label="Previous load packages" onClick={() => move(-1)}><IconLeft aria-hidden="true" /></button>
+        <div ref={trackRef} className="prepaid-search-offer__track" role="list">
           {tier.prices.map((price, index) => {
             const badge = PACKAGE_BADGES[tier.speed]?.[index];
             return <div className="prepaid-search-offer__card" key={PREPAID_VALIDITIES[index]} role="listitem">
@@ -51,7 +27,7 @@ export default function PrepaidSearchOffer({ tier }) {
             </div>;
           })}
         </div>
-        <button className="prepaid-search-offer__arrow prepaid-search-offer__arrow--next" type="button" aria-label="Next load packages" aria-controls={trackId} disabled={position.atEnd} onClick={() => move(1)}><IconRight aria-hidden="true" /></button>
+        <button className="prepaid-search-offer__arrow" type="button" aria-label="Next load packages" onClick={() => move(1)}><IconRight aria-hidden="true" /></button>
       </div>
       <div className="prepaid-search-offer__footer">
         <p>Now with speeds of up to 100 and 300 Mbps and one-year subscription!</p>

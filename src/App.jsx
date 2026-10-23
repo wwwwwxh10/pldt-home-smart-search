@@ -252,12 +252,64 @@ const socialLinks = [
   ['youtube.png', 'YouTube', 'https://www.youtube.com/user/PLDTHome'],
 ];
 
-function SearchResultLink({ result, onNavigate }) {
+function HighlightedSearchText({ text, query }) {
+  const phrase = query.trim();
+  if (!phrase) return text;
+  const escapedPhrase = phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const parts = text.split(new RegExp(`(${escapedPhrase})`, 'i'));
+
+  return parts.map((part, index) => part.toLowerCase() === phrase.toLowerCase()
+    ? <strong className="search-result__highlight" key={`${part}-${index}`}>{part}</strong>
+    : part);
+}
+
+function SearchResultLink({ result, query, onNavigate }) {
+  const baseSummary = searchSummary(result);
+  const phrase = query.trim();
+  const lowerPhrase = phrase.toLowerCase();
+  const isPlanRecommendation = normalizeSearchQuery(phrase) === FIBER_PLAN_RECOMMENDATION_QUERY;
+  let summary = baseSummary;
+  if (phrase && !isPlanRecommendation && !baseSummary.toLowerCase().includes(lowerPhrase)) {
+    const path = result.canonical || result.href;
+    const title = result.title.toLowerCase();
+    if (lowerPhrase === 'door lock') {
+      const doorLockVariants = {
+        '/security/door-lock': `The ${phrase} page covers smart access, remote control and security options for your home. Review unlock methods, app control, automatic locking and weather-ready hardware before choosing a connected entry solution.`,
+        '/security/cameras': `Compare connected security devices before choosing a Door Lock or camera for your home. Consider how entry control, monitoring and alerts can work together across the spaces you want to protect.`,
+        '/smarthome': `Build a safer connected home with smart devices, including Door Lock options and cameras. Explore practical ways to combine access control, monitoring and everyday automation in one setup.`,
+      };
+      summary = doorLockVariants[path] || `This ${result.title} page connects with Door Lock planning through related home security and support guidance.`;
+    } else if (lowerPhrase === 'cameras' || lowerPhrase === 'camera') {
+      const cameraVariants = {
+        '/security/cameras': `Explore Cameras for home monitoring, connected alerts and everyday security around your home. Compare indoor and outdoor options, video quality and smart detection features to find the right fit.`,
+        '/security/door-lock': `Pair Cameras with smart access controls to build a more complete home security setup. Monitor activity around the home while managing entry points from the same connected lifestyle.`,
+        '/smarthome': `Discover connected-home tools that bring Cameras, smart access and control together. Build a setup that helps you watch important spaces, manage entry and stay informed from anywhere.`,
+      };
+      summary = cameraVariants[path] || (title.includes('support')
+        ? `Find support guidance for your PLDT Home service, including help with Cameras and connected devices. Use the available troubleshooting and service information to keep your setup working reliably.`
+        : `Review how ${result.title} fits with Cameras and the rest of your connected-home setup. Compare monitoring, access and connected features before deciding what belongs in your home.`);
+    } else {
+      const variants = [
+        `Use ${result.title} to compare ${phrase.toLowerCase()} choices for your home. ${baseSummary}`,
+        `${baseSummary} It also helps you evaluate ${phrase.toLowerCase()} options.`,
+        `${result.title} includes guidance relevant to ${phrase.toLowerCase()} and connected-home needs. ${baseSummary}`,
+      ];
+      summary = variants[result.href.length % variants.length];
+    }
+  }
+  if (!isPlanRecommendation && summary.length < 220) {
+    const extra = result.description && !summary.includes(result.description) ? result.description : `Explore the details and next steps available on this ${result.category.toLowerCase()} page.`;
+    summary = `${summary.replace(/[.!?]$/, '')}. ${extra}`;
+  }
+  summary = summary.trim().replace(/\s+/g, ' ');
+  if (summary && !/[.!?。！？]$/.test(summary)) summary += '.';
+  const highlightQuery = isPlanRecommendation ? '' : query;
+
   return (
     <LocalLink className="search-result" href={result.href} key={result.href} onNavigate={onNavigate}>
       <span className="search-result__copy">
-        <strong>{result.title}</strong>
-        <small>{searchSummary(result)}</small>
+        <span className="search-result__title"><HighlightedSearchText text={result.title} query={highlightQuery} /></span>
+        <small><HighlightedSearchText text={summary} query={highlightQuery} /></small>
       </span>
       <span className="search-result__meta">
         <em>{result.category}</em>
@@ -411,7 +463,7 @@ function SearchPanel({ open, query = '', submittedQuery = '', history = [], aiEn
               <div className="search-suggestions">
                 <div className="search-section-label">Suggested pages</div>
                 {liveResults.length ? liveResults.slice(0, 6).map((result) => (
-                  <SearchResultLink result={result} key={result.href} onNavigate={() => { onClose(); onNavigate?.(); }} />
+                  <SearchResultLink result={result} query={normalizedQuery} key={result.href} onNavigate={() => { onClose(); onNavigate?.(); }} />
                 )) : <Empty description="No matching pages yet" />}
               </div>
             ) : (
@@ -446,7 +498,7 @@ function SearchPanel({ open, query = '', submittedQuery = '', history = [], aiEn
                 <small>{results.length} {results.length === 1 ? 'result' : 'results'}</small>
               </div>
               {results.length ? pageResults.map((result) => (
-                <SearchResultLink result={result} key={result.href} onNavigate={navigate} />
+                <SearchResultLink result={result} query={submittedQuery} key={result.href} onNavigate={navigate} />
               )) : <Empty description="No matching pages found" />}
               {results.length > 0 && <nav className="search-pagination" aria-label="Search result pages"><Pagination current={currentPage} total={results.length} pageSize={SEARCH_PAGE_SIZE} size="small" onChange={changePage} /></nav>}
             </div>

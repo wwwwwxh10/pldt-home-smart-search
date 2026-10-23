@@ -52,7 +52,7 @@
 .search-load > strong { color: var(--pldt-red); font-size: 34px; line-height: 1.2; font-weight: 800; letter-spacing: -.8px; white-space: nowrap; }
 .search-load__validity { margin-top: 10px; color: #333; font-size: 11px; font-weight: 700; white-space: nowrap; }
 .search-prepaid-offer__cta { align-self: flex-end; min-width: 150px; }
-.search-device-offer { display: grid; grid-template-columns: 144px minmax(0, 1fr) 174px; gap: 22px; align-items: center; }
+.search-device-offer { display: grid; grid-template-columns: 144px minmax(0, 1fr) 290px; gap: 22px; align-items: center; }
 .search-device-offer__visual { align-self: stretch; min-height: 160px; display: flex; align-items: center; justify-content: center; }
 .search-device-offer__visual img { display: block; width: 122px; height: 144px; object-fit: contain; mix-blend-mode: multiply; }
 .search-device-offer__copy { min-width: 0; }
@@ -73,7 +73,7 @@
 @media (max-width: 1000px) and (min-width: 601px) {
   .search-fiber-offer { gap: 18px; grid-template-columns: minmax(190px, 1fr) minmax(210px, 1.25fr); }
   .search-feature__actions { grid-column: 1 / -1; flex-direction: row; justify-content: flex-end; gap: 18px; }
-  .search-device-offer { grid-template-columns: 110px minmax(0, 1fr) 155px; gap: 15px; }
+  .search-device-offer { grid-template-columns: 110px minmax(0, 1fr) 250px; gap: 15px; }
   .search-device-offer__visual img { width: 100px; height: 130px; }
   .search-device-offer__purchase { padding-left: 16px; }
   .search-feature__tabs > button { padding: 10px; }

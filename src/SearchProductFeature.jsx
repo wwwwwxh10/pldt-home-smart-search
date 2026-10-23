@@ -1,5 +1,6 @@
 import React, { useId, useRef, useState } from 'react';
 import { IconCheck, IconRight, IconWifi, IconPhone } from '@arco-design/web-react/icon';
+import { PREPAID_LOAD_URL, PREPAID_VALIDITIES } from './searchProducts';
 import './search-products.css';
 import PrepaidSearchOffer from './PrepaidSearchOffer';
 
@@ -73,6 +74,24 @@ function FiberFeature({ plan }) {
       <div className="search-feature__actions">
         <a className="search-feature__cta" href={plan.href} target="_blank" rel="noreferrer">Select and Continue <IconRight aria-hidden="true" /></a>
       </div>
+    </div>
+  );
+}
+
+function PrepaidFeature({ tier }) {
+  return (
+    <div className="search-prepaid-offer">
+      <div className="search-prepaid-offer__loads" role="list" aria-label={`${tier.speed} load packages`}>
+        {tier.prices.map((price, index) => (
+          <div className="search-load" key={PREPAID_VALIDITIES[index]} role="listitem">
+            <strong>{price}</strong>
+            <span className="search-load__validity">FOR {PREPAID_VALIDITIES[index]}</span>
+          </div>
+        ))}
+      </div>
+      <a className="search-feature__cta search-prepaid-offer__cta" href={PREPAID_LOAD_URL} target="_blank" rel="noreferrer" aria-label={`LOAD HERE for ${tier.speed}`}>
+        LOAD HERE <IconRight aria-hidden="true" />
+      </a>
     </div>
   );
 }
