@@ -1,0 +1,1488 @@
+.pp2-page {
+  --pp2-red: #d61d23;
+  --pp2-deep-red: #ab202b;
+  --pp2-pink: #d84b7b;
+  --pp2-yellow: #d5b432;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: #282828;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-synthesis: style;
+  line-height: 20px;
+}
+
+.pp2-page button,
+.pp2-page a {
+  font-family: inherit;
+}
+
+.pp2-page img {
+  max-width: 100%;
+}
+
+.pp2-page h1,
+.pp2-page h2,
+.pp2-page h3,
+.pp2-page p {
+  letter-spacing: 0;
+}
+
+.pp2-section-width {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.pp2-button {
+  min-width: 146px;
+  min-height: 44px;
+  padding: 0 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  transition: background-color .18s ease, border-color .18s ease, color .18s ease, transform .18s ease;
+}
+
+.pp2-button:hover {
+  transform: translateY(-1px);
+}
+
+.pp2-button:focus-visible,
+.pp2-page button:focus-visible,
+.pp2-page a:focus-visible {
+  outline: 3px solid rgba(200, 47, 62, .35);
+  outline-offset: 3px;
+}
+
+.pp2-button--solid {
+  background: var(--pp2-red);
+  color: #fff;
+  box-shadow: 0 5px 12px rgba(122, 27, 37, .2);
+}
+
+.pp2-button--solid:hover {
+  background: var(--pp2-deep-red);
+}
+
+.pp2-button--light {
+  background: #fff;
+  color: var(--pp2-red);
+  box-shadow: 0 4px 9px rgba(69, 12, 28, .18);
+}
+
+.pp2-button--light:hover {
+  background: #fff8f8;
+}
+
+.pp2-button--outline {
+  background: transparent;
+  border-color: var(--pp2-red);
+  color: var(--pp2-red);
+}
+
+.pp2-button--outline:hover {
+  background: var(--pp2-red);
+  color: #fff;
+}
+
+.pp2-subnav {
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  background: #f6f6f6;
+}
+
+.pp2-subnav__inner {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+}
+
+.pp2-subnav a {
+  padding: 23px 0;
+  color: #111;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 22px;
+}
+
+.pp2-subnav a:hover {
+  color: var(--pp2-red);
+}
+
+.pp2-hero {
+  min-height: 420px;
+  position: relative;
+  aspect-ratio: 2732 / 1000;
+  background: #f1e0af;
+}
+
+.pp2-hero__visual {
+  position: absolute;
+  inset: 0;
+  background: url('/assets/prepaid-page-hero.png') center / cover no-repeat;
+}
+
+.pp2-hero__copy {
+  width: calc((100% - 20px) / 3 - 24px);
+  padding: 24px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: max(22px, calc((100% - 1440px) / 2 + 22px));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pp2-hero__logo {
+  width: min(360px, 100%);
+  padding: 4px 0;
+  align-self: center;
+  height: auto;
+  display: block;
+}
+
+.pp2-hero__headline {
+  width: min(512px, 100%);
+  padding: 4px 0;
+  height: auto;
+  margin: 0;
+  display: block;
+}
+
+.pp2-hero__tagline {
+  width: min(370px, 100%);
+  padding: 4px 0;
+  align-self: center;
+  height: auto;
+  margin: 0;
+  display: block;
+}
+
+.pp2-hero__copy p {
+  margin: 0 0 18px;
+  color: #292929;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.pp2-hero__copy > .pp2-button {
+  min-width: 0;
+  min-height: 45px;
+  margin: 20px 0;
+  padding: 12px 20px;
+  background: #d61d23;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.pp2-hero__copy p a {
+  color: #bd2934;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.pp2-benefits {
+  position: relative;
+  background: #fff url('/assets/prepaid-benefits-desktop.png') center / cover no-repeat;
+}
+
+.pp2-benefits__inner {
+  width: min(1176px, calc((100% + 4px) * 5 / 6 - 24px));
+  min-height: 750px;
+  margin: 0 auto;
+  position: relative;
+  padding: 48px 0;
+}
+
+.pp2-benefits h1 {
+  margin: 10px 0 20px;
+  color: #c20344;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+}
+
+.pp2-benefit-list {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.pp2-benefit {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #c20344;
+  text-align: center;
+}
+
+.pp2-benefit__icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: none;
+  font-size: 40px;
+}
+
+.pp2-benefit strong {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.pp2-benefit:nth-child(2) strong { max-width: 135px; }
+
+.pp2-price-card {
+  width: calc((100% + 24px) * 5 / 12 - 24px);
+  min-height: 317px;
+  padding: 24px 0 24px 24px;
+  position: absolute;
+  top: 327.5px;
+  left: calc((100% + 24px) / 3);
+  border-radius: 19px;
+  overflow: hidden;
+  background: #ca1f50 url('/assets/prepaid-price-gradient.png') center / cover no-repeat;
+  color: #fff;
+}
+
+.pp2-price-card__top {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.pp2-price-card__top > div:first-child {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.pp2-price-card__top small {
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pp2-price-card__top > div:first-child strong {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.pp2-price-card__price {
+  min-width: 177px;
+  min-height: 80px;
+  margin: 0;
+  padding: 8px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px 0 0 16px;
+  background: url('/assets/prepaid-price-label.svg') center / 100% 100% no-repeat;
+  color: var(--pp2-red);
+}
+
+.pp2-price-card__price strong {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.pp2-price-card__price span {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.pp2-price-card > p {
+  margin: 24px 24px 16px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pp2-price-card .pp2-button {
+  min-width: 170px;
+  min-height: 38px;
+  padding: 0 22px;
+  font-size: 11px;
+}
+
+.pp2-price-card__terms {
+  margin: 32px 16px 0 0;
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.pp2-benefits__mobile-router {
+  display: none;
+}
+
+@media (min-width: 1400px) {
+  .pp2-price-card {
+    left: calc((100% + 24px) / 2);
+    width: calc((100% + 24px) / 3 - 24px);
+  }
+}
+
+.pp2-plans {
+  padding: 48px 0 66px;
+  background: #fff8da;
+  text-align: center;
+}
+
+.pp2-plans h2 {
+  margin: 10px 0 20px;
+  color: #050505;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 50px;
+}
+
+.pp2-plans__intro {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.pp2-tier-tabs {
+  width: min(1052px, calc(100% - 72px));
+  min-height: 65px;
+  margin: 90px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  border-radius: 18px;
+}
+
+.pp2-tier-tabs button {
+  min-width: 0;
+  min-height: 65px;
+  padding: 16px;
+  position: relative;
+  border: 2px solid var(--pp2-red);
+  border-radius: 20px;
+  background: transparent;
+  color: var(--pp2-red);
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.pp2-tier-tabs button:first-child {
+  border-left-width: 2px;
+  border-radius: 20px;
+}
+
+.pp2-tier-tabs button:last-child {
+  border-radius: 20px;
+}
+
+.pp2-tier-tabs button.pp2-is-active {
+  border-color: #a9292c;
+  background: linear-gradient(120deg, #d0433f, #9e1d20);
+  color: #fff;
+}
+
+.pp2-tier-tabs button img {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pp2-tier-tabs::after {
+  content: '';
+  height: 4px;
+  grid-column: 1 / -1;
+  margin-top: 24px;
+  background: linear-gradient(90deg, #d0aa2e, #ffe896 50%, #d0aa2e);
+}
+
+.pp2-plan-carousel {
+  width: min(910px, 100%);
+  margin: 48px auto 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pp2-plan-carousel__viewport {
+  width: min(818px, calc(100% - 76px));
+  overflow: visible;
+  clip-path: inset(-40px 0 0);
+}
+
+.pp2-plan-carousel__track {
+  display: flex;
+  gap: 16px;
+}
+
+.pp2-plan-card {
+  height: 208px;
+  min-width: 0;
+  flex: 0 0 calc((100% - 32px) / 3);
+  padding: 48px 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--pp2-red);
+  border-radius: 18px;
+  background: #fff;
+  color: #222;
+}
+
+.pp2-plan-card__new {
+  width: 100px;
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pp2-plan-card__best {
+  min-height: 25px;
+  padding: 6px 12px;
+  position: absolute;
+  top: -14px;
+  left: 10px;
+  right: 10px;
+  border-radius: 14px;
+  background: #ffd33c;
+  color: #a82029;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.pp2-plan-card__price {
+  color: var(--pp2-red);
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.pp2-plan-card__rule {
+  width: 100%;
+  height: 4px;
+  margin: 16px 0;
+  background: linear-gradient(90deg, #d0aa2e, #ffe896 50%, #d0aa2e);
+}
+
+.pp2-plan-card b {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.pp2-arrow {
+  width: 38px;
+  height: 38px;
+  z-index: 2;
+  flex: 0 0 38px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(207, 207, 207, .88);
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.pp2-arrow:hover {
+  background: var(--pp2-red);
+}
+
+.pp2-plan-carousel > .pp2-arrow--previous {
+  margin-right: -21px;
+}
+
+.pp2-plan-carousel > .pp2-arrow--next {
+  margin-left: -21px;
+}
+
+.pp2-dots {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+
+.pp2-dots button {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #d7d7d7;
+  cursor: pointer;
+}
+
+.pp2-dots button.pp2-is-active {
+  background: #ce3540;
+}
+
+.pp2-plans__login {
+  margin: 64px 0 18px;
+  color: #353535;
+  font-size: 13px;
+}
+
+.pp2-button--load {
+  min-width: 196px;
+}
+
+.pp2-button--load::before {
+  content: '\25a4';
+  margin-right: 9px;
+  font-size: 14px;
+}
+
+.pp2-channels {
+  padding: 48px 0;
+  background: #e84684;
+}
+
+.pp2-channels h2 {
+  margin: 10px 0 20px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 50px;
+  text-align: center;
+}
+
+.pp2-channel-grid {
+  width: min(1105px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.pp2-channel-grid img {
+  width: 140px;
+  height: auto;
+  display: block;
+  border-radius: 7px;
+}
+
+.pp2-channel-grid img:nth-child(7) {
+  width: 140px;
+}
+
+.pp2-how {
+  padding: 58px 10px 108px;
+  background: #2e2f33;
+  color: #fff;
+}
+
+.pp2-how h2 {
+  margin: 0 0 38px;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+}
+
+.pp2-how__list {
+  display: grid;
+  gap: 32px;
+  width: calc(100% - 24px);
+}
+
+.pp2-how .pp2-section-width { width: min(1420px, 100%); }
+
+.pp2-benefits { scroll-margin-top: 100px; }
+
+.pp2-guide {
+  border: 0;
+  border-radius: 0;
+}
+
+.pp2-guide h3 {
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, .95);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.pp2-guide h3 button {
+  width: 100%;
+  min-height: 59px;
+  padding: 16px 50px 16px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  position: relative;
+}
+
+.pp2-guide h3 svg {
+  flex: 0 0 auto;
+  font-size: 24px;
+  stroke-width: 6;
+  position: absolute;
+  right: 22px;
+  transition: transform .2s ease;
+}
+
+.pp2-guide h3 svg path,
+.pp2-faq-item h3 svg path { stroke-width: 6; }
+
+.pp2-guide.pp2-is-open h3 svg {
+  transform: rotate(180deg);
+}
+
+.pp2-guide.pp2-is-open h3 button {
+  background: #fff;
+  color: #2e2f33;
+}
+
+.pp2-guide__body {
+  padding: 41px 15px 57px;
+}
+
+.pp2-guide-slides {
+  position: relative;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.pp2-guide-slides__steps { min-width: 0; }
+
+.pp2-guide-slides__steps button {
+  width: 100%;
+  min-height: 134px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  opacity: .5;
+  text-align: left;
+}
+
+.pp2-guide-slides__steps button.pp2-is-active { opacity: 1; }
+
+.pp2-guide-slides__steps strong {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.pp2-guide-slides__steps span { font-size: 18px; line-height: 20px; }
+.pp2-guide-slides__visual { padding: 0 16px 16px; min-width: 0; }
+.pp2-guide-slides__visual img { display: block; width: min(655px, 100%); height: auto; }
+.pp2-guide-slides__dots {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: translateY(-50%);
+}
+.pp2-guide-slides__dots button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+  opacity: .5;
+  cursor: pointer;
+}
+.pp2-guide-slides__dots button.pp2-is-active { opacity: 1; }
+
+.pp2-topup {
+  padding: 58px 0 0;
+  background: #fff;
+}
+
+.pp2-topup .pp2-section-width {
+  width: 100%;
+}
+
+.pp2-topup h2 {
+  margin: 0 10px 68px;
+  color: #333;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 50px;
+  text-align: center;
+}
+
+.pp2-topup > div > p {
+  margin: 0 10px 68px;
+  color: #333;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 50px;
+  text-align: center;
+}
+
+.pp2-topup__carousel {
+  position: relative;
+}
+
+.pp2-topup__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: calc(100% + 17px);
+}
+
+.pp2-topup__grid article {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.pp2-topup__grid article > img {
+  width: calc(100% - 16px);
+  margin: 0 8px 16px;
+  height: auto;
+  display: block;
+}
+
+.pp2-topup__grid article > div {
+  min-height: 112px;
+  padding: 24px 26px 22px;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  background: #535358;
+  color: #fff;
+}
+
+.pp2-topup__grid article:nth-child(even) > div {
+  background: #535358;
+}
+
+.pp2-topup__grid article b {
+  font-size: 37px;
+  line-height: 1;
+}
+
+.pp2-topup__grid article p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.pp2-topup__grid article strong {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.pp2-topup__arrow,
+.pp2-topup__dots {
+  display: none;
+}
+
+.pp2-faq {
+  padding: 50px 10px 60px;
+  background: #f1f1f1;
+}
+
+.pp2-faq__inner {
+  width: min(1130px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pp2-faq h2 {
+  margin: 0 0 10px;
+  color: #050505;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.pp2-faq__list {
+  text-align: left;
+}
+
+.pp2-faq-item {
+  border-bottom: 0;
+}
+
+.pp2-faq-item h3 {
+  margin: 0 0 10px;
+}
+
+.pp2-faq-item h3 button {
+  width: 100%;
+  min-height: 0;
+  padding: 20px 50px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  border: 0;
+  border-bottom: 1px solid #838383;
+  position: relative;
+  background: transparent;
+  color: #838383;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: left;
+}
+
+.pp2-faq-item h3 svg {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 22px;
+  stroke-width: 6;
+  transition: transform .2s ease;
+}
+
+.pp2-faq-item.pp2-is-open h3 button {
+  color: var(--pp2-red);
+}
+
+.pp2-faq-item.pp2-is-open h3 svg {
+  transform: rotate(180deg);
+}
+
+.pp2-faq-item__answer {
+  padding: 0 0 20px;
+}
+
+.pp2-faq-item__answer p {
+  margin: 0;
+  color: #222;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.pp2-faq .pp2-button {
+  margin-top: 44px;
+  min-height: 45px;
+}
+
+@media (max-width: 991px) {
+  .pp2-section-width {
+    width: min(720px, calc(100% - 32px));
+  }
+
+  .pp2-subnav__inner {
+    width: 100%;
+    padding: 0 20px;
+    justify-content: center;
+  }
+
+  .pp2-hero__copy {
+    left: 30px;
+  }
+
+  .pp2-benefits__inner {
+    width: calc(100% - 36px);
+  }
+
+  .pp2-benefit-list {
+    gap: 14px;
+  }
+
+  .pp2-price-card {
+    left: 47%;
+  }
+
+  .pp2-channel-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .pp2-channel-grid img:nth-child(7) {
+    grid-column: auto;
+    width: 140px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pp2-section-width {
+    width: 100%;
+  }
+
+  .pp2-button {
+    min-height: 40px;
+    padding: 0 23px;
+    font-size: 12px;
+  }
+
+  .pp2-subnav {
+    min-height: 68px;
+  }
+
+  .pp2-subnav__inner {
+    gap: 37px;
+  }
+
+  .pp2-subnav a {
+    padding: 23px 0;
+    font-size: 13px;
+  }
+
+  .pp2-hero {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: auto;
+    background: #f1dfad;
+  }
+
+  .pp2-hero__copy {
+    width: calc(100% - 44px);
+    min-height: 0;
+    margin: 0 auto;
+    padding: 16px 0;
+    position: relative;
+    top: auto;
+    left: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pp2-hero__logo {
+    width: min(360px, 100%);
+  }
+
+  .pp2-hero__headline {
+    width: 100%;
+    margin: 0;
+  }
+
+  .pp2-hero__tagline {
+    width: min(370px, 100%);
+    margin: 0;
+  }
+
+  .pp2-hero__copy p {
+    max-width: none;
+    margin: 0 0 18px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .pp2-hero__copy > .pp2-button {
+    min-height: 41px;
+    padding: 10px;
+  }
+
+  .pp2-hero__visual {
+    width: 100%;
+    position: relative;
+    inset: auto;
+    aspect-ratio: 750 / 692;
+    background-image: url('/assets/prepaid-page-hero-mobile.png');
+  }
+
+  .pp2-benefits {
+    background: #fff;
+  }
+
+  .pp2-benefits__inner {
+    width: 100%;
+    min-height: 0;
+    padding: 16px 10px 0;
+  }
+
+  .pp2-benefits h1 {
+    max-width: none;
+    margin: 10px auto 20px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .pp2-benefit-list {
+    width: min(274px, 100%);
+    margin-top: 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+  }
+
+  .pp2-benefit:last-child {
+    grid-column: auto;
+  }
+
+  .pp2-benefit__icon {
+    width: 80px;
+    height: 80px;
+    box-shadow: none;
+    font-size: 37px;
+  }
+
+  .pp2-benefit strong {
+    max-width: 135px;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+
+  .pp2-price-card {
+    width: 100%;
+    min-height: 297.5px;
+    margin: 16px auto 0;
+    padding: 16px 0 16px 16px;
+    position: relative;
+    top: auto;
+    left: auto;
+    border-radius: 18px;
+  }
+
+  .pp2-price-card__top {
+    gap: 8px;
+  }
+
+  .pp2-price-card__top small {
+    font-size: 14px;
+  }
+
+  .pp2-price-card__top > div:first-child strong {
+    font-size: 32px;
+  }
+
+  .pp2-price-card__price {
+    min-width: 177px;
+    margin: 0;
+    padding: 8px 24px;
+  }
+
+  .pp2-price-card__price strong {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .pp2-price-card__price span {
+    font-size: 18px;
+  }
+
+  .pp2-price-card > p {
+    margin: 24px 16px 16px 0;
+    font-size: 14px;
+  }
+
+  .pp2-price-card .pp2-button {
+    min-width: 152px;
+    min-height: 33.5px;
+    font-size: 10px;
+  }
+
+  .pp2-price-card__terms {
+    margin-top: 32px;
+    font-size: 12px;
+  }
+
+  .pp2-benefits__mobile-router {
+    width: 100%;
+    margin-top: 24px;
+    display: block;
+  }
+
+  .pp2-benefits__mobile-router img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .pp2-plans {
+    padding: 16px 10px 35px;
+  }
+
+  .pp2-plans h2 {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px auto 20px;
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .pp2-plans__intro {
+    max-width: none;
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .pp2-tier-tabs {
+    width: calc(100% - 20px);
+    min-height: 51px;
+    margin: 50px 0 0 20px;
+    border-radius: 18px;
+    column-gap: 0;
+  }
+
+  .pp2-tier-tabs button {
+    min-height: 51px;
+    padding: 16px 4px;
+    border-width: 1px;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .pp2-tier-tabs button:first-child {border-radius: 20px 0 0 20px; border-left-width: 1px;}
+  .pp2-tier-tabs button:last-child {border-radius: 0 20px 20px 0;}
+
+  .pp2-tier-tabs button img {
+    width: 60px;
+    top: -14px;
+  }
+
+  .pp2-tier-tabs::after {
+    height: 4px;
+    margin-top: 32px;
+    margin-left: -20px;
+  }
+
+  .pp2-plan-carousel {
+    width: 100%;
+    margin-top: 48px;
+    justify-content: flex-start;
+  }
+
+  .pp2-plan-carousel__viewport {
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .pp2-plan-carousel__track {
+    gap: 16px;
+  }
+
+  .pp2-plan-card {
+    height: 208px;
+    flex-basis: min(258px, 72vw);
+    padding: 48px 16px;
+  }
+
+  .pp2-plan-card__price {
+    font-size: 52px;
+  }
+
+  .pp2-plan-card__rule {
+    margin-top: 16px;
+  }
+
+  .pp2-plan-card b {
+    font-size: 14px;
+  }
+
+  .pp2-plan-carousel > .pp2-arrow {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 103px;
+    margin: 0;
+    font-size: 23px;
+  }
+
+  .pp2-plan-carousel > .pp2-arrow--previous {
+    left: 16px;
+  }
+
+  .pp2-plan-carousel > .pp2-arrow--next {
+    right: 14px;
+  }
+
+  .pp2-dots {
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .pp2-dots button {
+    width: 14px;
+    height: 14px;
+  }
+
+  .pp2-plans__login {
+    margin: 64px 0 18px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .pp2-button--load {
+    min-width: 176px;
+    min-height: 44px;
+  }
+
+  .pp2-channels {
+    padding: 16px 10px;
+  }
+
+  .pp2-channels h2 {
+    max-width: none;
+    margin: 10px auto 20px;
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .pp2-channel-grid {
+    width: min(296px, 100%);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .pp2-channel-grid img:nth-child(7) {
+    width: 140px;
+    grid-column: 1 / 3;
+    justify-self: center;
+  }
+
+  .pp2-how {
+    padding: 58px 10px 110px;
+  }
+
+  .pp2-how h2 {
+    max-width: 370px;
+    margin: 0 auto 36px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .pp2-how__list {
+    gap: 32px;
+  }
+
+  .pp2-guide {
+    border-radius: 15px;
+  }
+
+  .pp2-guide h3 button {
+    min-height: 54px;
+    padding: 16px 50px 16px 25px;
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .pp2-guide:nth-child(4) h3 button span {
+    max-width: none;
+  }
+
+  .pp2-guide h3 svg {
+    font-size: 23px;
+  }
+
+  .pp2-guide__body {
+    padding: 41px 15px 57px;
+  }
+
+  .pp2-guide-slides { display: flex; flex-direction: column; gap: 16px; }
+  .pp2-guide-slides__visual { order: 0; width: 100%; padding: 0; }
+  .pp2-guide-slides__steps { order: 1; width: 100%; }
+  .pp2-guide-slides__steps button { display: none; min-height: 0; padding: 16px 0; text-align: center; align-items: center; }
+  .pp2-guide-slides__steps button.pp2-is-active { display: flex; }
+  .pp2-guide-slides__dots { position: static; order: 2; width: 100%; flex-direction: row; justify-content: center; flex-wrap: wrap; transform: none; }
+
+  .pp2-topup {
+    padding: 58px 0 0;
+  }
+
+  .pp2-topup h2 {
+    max-width: 370px;
+    margin: 0 auto 68px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .pp2-topup__desktop-break {display: none;}
+
+  .pp2-topup > div > p {
+    max-width: 370px;
+    margin: 0 auto 68px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .pp2-topup__grid {
+    display: block;
+    width: 100%;
+  }
+
+  .pp2-topup__grid article {
+    display: none;
+  }
+
+  .pp2-topup__grid article.pp2-is-active {
+    display: flex;
+  }
+
+  .pp2-topup__grid article > div {
+    min-height: 175px;
+    padding: 17px 21px 34px;
+    grid-template-columns: 32px 1fr;
+    gap: 12px;
+  }
+
+  .pp2-topup__grid article b {
+    padding-top: 11px;
+    font-size: 31px;
+  }
+
+  .pp2-topup__grid article p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .pp2-topup__arrow {
+    display: inline-flex;
+    position: absolute;
+    top: 23%;
+  }
+
+  .pp2-topup__arrow.pp2-arrow--previous {
+    left: 15px;
+  }
+
+  .pp2-topup__arrow.pp2-arrow--next {
+    right: 15px;
+  }
+
+  .pp2-topup__dots {
+    margin-top: -30px;
+    padding-bottom: 16px;
+    position: relative;
+    display: flex;
+  }
+
+  .pp2-topup__dots button {
+    border: 2px solid #fff;
+  }
+
+  .pp2-faq {
+    padding: 50px 10px 60px;
+  }
+
+  .pp2-faq h2 {
+    max-width: none;
+    margin: 0 auto 10px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .pp2-faq-item h3 button {
+    min-height: 0;
+    padding: 20px 50px 20px 0;
+    gap: 0;
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .pp2-faq-item h3 svg {
+    font-size: 25px;
+  }
+
+  .pp2-faq-item__answer {
+    padding: 0 0 20px;
+  }
+
+  .pp2-faq-item__answer p {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .pp2-faq .pp2-button {
+    margin-top: 44px;
+    min-height: 41px;
+  }
+}
+
+@media (max-width: 374px) {
+  .pp2-subnav__inner {
+    gap: 25px;
+  }
+
+  .pp2-subnav a {
+    font-size: 12px;
+  }
+
+  .pp2-hero__copy {
+    min-height: 370px;
+  }
+
+  .pp2-price-card__top > div:first-child strong {
+    font-size: 27px;
+  }
+
+  .pp2-price-card__price {
+    min-width: 150px;
+  }
+
+  .pp2-price-card__price strong {
+    font-size: 27px;
+  }
+
+  .pp2-tier-tabs {
+    width: calc(100% - 16px);
+  }
+
+  .pp2-tier-tabs button {
+    font-size: 11px;
+  }
+
+  .pp2-plan-card {
+    flex-basis: 238px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp2-page *,
+  .pp2-page *::before,
+  .pp2-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}

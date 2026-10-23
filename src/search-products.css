@@ -1,0 +1,140 @@
+.search-feature {
+  --feature-ink: var(--pldt-red);
+  min-width: 0;
+  margin: 0 0 20px;
+}
+.search-feature__topline { min-height: 46px; display: flex; align-items: stretch; gap: 0; padding: 0; border-top: 1px solid #e3e3e3; border-bottom: 1px solid #dedede; background: #f6f6f8; }
+.search-feature__title { min-height: 46px; display: flex; align-items: center; margin: 0; padding: 0 4px; color: #292929; font-size: 16px; font-weight: 700; line-height: 1.4; }
+.search-feature__explore { display: inline-flex; align-items: center; align-self: center; gap: 5px; margin-left: auto; padding: 8px 4px 8px 12px; color: var(--pldt-red); font-size: 12px; font-weight: 500; line-height: 1.5; text-decoration: none; white-space: nowrap; }
+.search-feature__explore:hover { color: var(--pldt-deep-red); text-decoration: none; }
+.search-feature__explore svg { font-size: 12px; }
+.search-feature__tabs { width: 100%; min-width: 0; display: flex; gap: 0; margin: 0; overflow-x: auto; border: 0; background: transparent; scrollbar-width: none; }
+.search-feature__tabs::-webkit-scrollbar { display: none; }
+.search-feature__tabs > button { flex: 1 0 auto; min-width: 0; display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 46px; padding: 10px 16px; border: 0; border-top: 2px solid transparent; background: transparent; color: #444; cursor: pointer; white-space: nowrap; font-size: 15px; font-weight: 700; line-height: 1.4; transition: color .15s ease, background-color .15s ease; }
+.search-feature__tabs > button:last-child { border-right: 0; }
+.search-feature__tabs > button[aria-selected='true'] { border-top-color: var(--pldt-red); background: #fff; color: var(--pldt-red); }
+.search-feature__tabs > button:hover { color: var(--feature-ink); }
+.search-feature__tabs > button:focus-visible, .search-feature a:focus-visible { outline: 2px solid #83121b; outline-offset: 2px; }
+.search-feature__new { color: var(--pldt-red); font-size: 8px; line-height: 1; font-weight: 800; }
+.search-feature__tab-badge { padding: 3px 5px; border: 1px solid currentColor; border-radius: 3px; color: var(--pldt-red); font-size: 8px; font-weight: 700; line-height: 1.3; letter-spacing: .15px; }
+.search-feature__panel { padding: 24px 0 22px; border-bottom: 1px solid #e8e8e8; }
+.search-feature--prepaid .search-feature__panel { background: transparent; }
+.search-feature h3 { margin: 0; color: #292929; font-size: 19px; font-weight: 700; line-height: 1.4; }
+.search-feature__price { display: flex; align-items: baseline; gap: 4px; margin: 12px 0 8px; line-height: 1.1; white-space: nowrap; }
+.search-feature__price strong { color: var(--pldt-red); font-size: 36px; font-weight: 800; letter-spacing: -1.4px; }
+.search-feature__price > span { color: #707070; font-size: 12px; }
+.search-fiber-offer { display: grid; grid-template-columns: minmax(220px, 1.1fr) minmax(225px, 1.35fr) minmax(175px, .85fr); align-items: center; gap: 22px; }
+.search-fiber-offer__identity { min-width: 0; align-self: stretch; display: flex; flex-direction: column; justify-content: center; padding: 0 20px 0 0; border-right: 1px solid #e8e8e8; }
+.search-fiber-offer__speed { margin: 7px 0 0; color: #666; font-size: 12px; }
+.search-fiber-offer__speed b { color: var(--pldt-red); font-size: 15px; font-weight: 700; }
+.search-feature__inclusions { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; color: #333; font-size: 13px; font-weight: 500; }
+.search-feature__inclusions > span { display: flex; align-items: center; gap: 8px; }
+.search-feature__inclusions > span > svg { color: var(--pldt-red); font-size: 16px; flex-shrink: 0; }
+.search-feature__inclusions a { display: inline-flex; align-items: center; gap: 5px; }
+.search-feature__inclusions a:hover, .search-feature__perks a:hover { color: var(--pldt-deep-red); }
+.search-feature__link-label { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.search-feature__inclusions a, .search-feature__perks a { color: var(--pldt-red); font-weight: 500; }
+.search-feature__inclusions a:hover .search-feature__link-label, .search-feature__perks a:hover .search-feature__link-label { text-decoration-thickness: 2px; }
+.search-feature__detail-label { display: block; margin: 0 0 8px; color: #333; font-size: 12px; font-weight: 700; line-height: 1.5; }
+.search-feature__perks { display: flex; flex-direction: column; gap: 7px; }
+.search-feature__perks a { display: inline-flex; align-items: flex-start; gap: 6px; color: var(--pldt-red); font-size: 12px; line-height: 1.6; }
+.search-feature__perks svg { flex-shrink: 0; margin-top: 3px; color: var(--pldt-red); font-size: 13px; }
+.search-feature__actions { display: flex; flex-direction: column; align-items: flex-end; gap: 13px; }
+.search-feature__cta { width: fit-content; max-width: 100%; min-height: 40px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 10px 14px; border: 1px solid var(--pldt-red); border-radius: 6px; background: var(--pldt-red); color: #fff; font-size: 12px; font-weight: 700; line-height: 1.5; white-space: nowrap; box-shadow: 0 3px 8px #cb30331a; }
+.search-feature__cta:hover { border-color: var(--pldt-deep-red); background: var(--pldt-deep-red); color: #fff; }
+.search-feature__cta--unavailable { border-color: #c9c9c9; background: #fff; color: #6a6a6a; box-shadow: none; }
+.search-feature__cta--unavailable:hover { border-color: #999; background: #f7f7f7; color: #444; }
+.search-feature__note { padding: 11px 0 0; color: #737373; font-size: 10px; line-height: 1.6; }
+.search-prepaid-offer { display: flex; flex-direction: column; gap: 18px; }
+.search-prepaid-offer__loads { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; }
+.search-load { min-width: 0; min-height: 116px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 18px 10px; border-right: 1px solid #e5e5e5; background: transparent; }
+.search-load:last-child { border-right: 0; }
+.search-load > strong { color: var(--pldt-red); font-size: 34px; line-height: 1.2; font-weight: 800; letter-spacing: -.8px; white-space: nowrap; }
+.search-load__validity { margin-top: 10px; color: #333; font-size: 11px; font-weight: 700; white-space: nowrap; }
+.search-prepaid-offer__cta { align-self: flex-end; min-width: 150px; }
+.search-device-offer { display: grid; grid-template-columns: 144px minmax(0, 1fr) 174px; gap: 22px; align-items: center; }
+.search-device-offer__visual { align-self: stretch; min-height: 160px; display: flex; align-items: center; justify-content: center; }
+.search-device-offer__visual img { display: block; width: 122px; height: 144px; object-fit: contain; mix-blend-mode: multiply; }
+.search-device-offer__copy { min-width: 0; }
+.search-device-offer__copy h3 > a { display: inline; }
+.search-device-offer__copy h3 > a > svg { font-size: 12px; color: var(--pldt-red); }
+.search-device-offer__copy h3 > a:hover { color: var(--pldt-red); }
+.search-device-offer__copy p { margin: 8px 0 14px; color: #666; font-size: 12px; line-height: 1.7; }
+.search-device-offer__copy ul { display: grid; gap: 7px; margin: 0; padding: 0; list-style: none; }
+.search-device-offer__copy li { display: flex; align-items: flex-start; gap: 7px; color: #444; font-size: 12px; line-height: 1.5; }
+.search-device-offer__copy li > svg { margin-top: 3px; color: var(--pldt-red); flex-shrink: 0; }
+.search-device-offer__purchase { display: flex; flex-direction: column; align-items: flex-start; padding: 4px 0 4px 22px; border-left: 1px solid #e8e8e8; }
+.search-device-offer__purchase .search-feature__price { margin: 0 0 8px; }
+.search-device-offer__purchase .search-feature__price strong { font-size: 32px; }
+.search-device-offer__term { color: #737373; font-size: 11px; }
+.search-device-offer__cash { margin: 6px 0 16px; color: #555; font-size: 11px; }
+.search-device-offer__purchase .search-feature__cta { width: 100%; }
+
+@media (max-width: 1000px) and (min-width: 601px) {
+  .search-fiber-offer { gap: 18px; grid-template-columns: minmax(190px, 1fr) minmax(210px, 1.25fr); }
+  .search-feature__actions { grid-column: 1 / -1; flex-direction: row; justify-content: flex-end; gap: 18px; }
+  .search-device-offer { grid-template-columns: 110px minmax(0, 1fr) 155px; gap: 15px; }
+  .search-device-offer__visual img { width: 100px; height: 130px; }
+  .search-device-offer__purchase { padding-left: 16px; }
+  .search-feature__tabs > button { padding: 10px; }
+  .search-prepaid-offer__loads { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .search-load:nth-child(3n) { border-right: 0; }
+  .search-load:nth-child(n + 4) { border-top: 1px solid #e5e5e5; }
+}
+
+@media (max-width: 600px) {
+  .search-feature { margin-bottom: 10px; }
+  .search-feature__title { min-height: 42px; font-size: 14px; }
+  .search-feature--doorlock .search-feature__topline { flex-wrap: wrap; align-items: center; }
+  .search-feature__explore { font-size: 11px; padding-left: 8px; }
+  .search-feature__topline { min-height: 42px; }
+  .search-feature__tabs > button { flex: 1 0 auto; min-height: 42px; font-size: 14px; padding: 9px 10px; gap: 5px; }
+  .search-feature--prepaid .search-feature__tabs > button { padding-inline: 6px; gap: 4px; }
+  .search-feature--fiber .search-feature__tabs > button { flex-direction: column; gap: 3px; padding: 6px 5px; }
+  .search-feature__tab-badge { padding: 2px 3px; font-size: 7px; }
+  .search-feature__panel { padding: 16px 0 18px; }
+  .search-feature h3 { font-size: 17px; }
+  .search-fiber-offer { grid-template-columns: 1fr; gap: 14px; }
+  .search-fiber-offer__identity { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; padding: 0 0 14px; border-right: 0; border-bottom: 1px solid #ededed; }
+  .search-fiber-offer__heading { min-width: 0; }
+  .search-fiber-offer__heading h3 { font-size: 15px; }
+  .search-fiber-offer__identity .search-feature__price { display: block; align-self: center; margin: 0; text-align: right; }
+  .search-fiber-offer__identity .search-feature__price > span { display: block; margin-top: 3px; font-size: 10px; }
+  .search-feature__price strong { font-size: 29px; }
+  .search-fiber-offer__speed { margin: 7px 0 0; font-size: 11px; }
+  .search-fiber-offer__speed b { font-size: 12px; }
+  .search-feature__inclusions { flex-direction: row; flex-wrap: wrap; gap: 7px 12px; margin-bottom: 12px; font-size: 11px; }
+  .search-feature__inclusions > span { gap: 5px; }
+  .search-feature__inclusions > span > svg { font-size: 14px; }
+  .search-feature__perks { gap: 6px; }
+  .search-feature__perks a { font-size: 11px; }
+  .search-feature__actions { flex-direction: row; justify-content: flex-end; gap: 8px; }
+  .search-feature__cta { min-height: 38px; padding: 9px 11px; font-size: 11px; }
+  .search-feature__actions .search-feature__cta { width: 100%; }
+  .search-prepaid-offer__loads { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .search-load { min-height: 94px; padding: 14px 8px; }
+  .search-load:nth-child(2n) { border-right: 0; }
+  .search-load:nth-child(3n) { border-right: 1px solid #e5e5e5; }
+  .search-load:nth-child(n + 3) { border-top: 1px solid #e5e5e5; }
+  .search-load > strong { font-size: 29px; }
+  .search-load__validity { margin-top: 7px; font-size: 10px; }
+  .search-prepaid-offer__cta { align-self: stretch; width: 100%; }
+  .search-device-offer { grid-template-columns: 85px minmax(0, 1fr); gap: 12px; }
+  .search-device-offer__visual { min-height: 140px; }
+  .search-device-offer__visual img { width: 77px; height: 112px; }
+  .search-device-offer__copy h3 { font-size: 15px; }
+  .search-device-offer__copy p { margin: 6px 0 9px; font-size: 11px; }
+  .search-device-offer__copy ul { gap: 6px; }
+  .search-device-offer__copy li { font-size: 11px; }
+  .search-device-offer__purchase { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 5px 8px; padding: 14px 0 0; border-left: 0; border-top: 1px solid #ededed; }
+  .search-device-offer__purchase .search-feature__price { margin: 0; }
+  .search-device-offer__purchase .search-feature__price strong { font-size: 29px; }
+  .search-device-offer__term, .search-device-offer__cash { grid-column: 1; margin: 0; font-size: 10px; }
+  .search-device-offer__purchase > .search-feature__cta { grid-column: 2; grid-row: 1 / 4; align-self: center; }
+  .search-feature__note { padding: 9px 0 0; font-size: 9px; }
+}
+
+@media (max-width: 360px) {
+  .search-feature__actions { flex-direction: column; align-items: stretch; gap: 10px; }
+  .search-feature__actions .search-feature__cta { width: 100%; }
+}

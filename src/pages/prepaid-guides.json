@@ -1,0 +1,357 @@
+[
+  {
+    "title": "Top Up Via GCash",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "Open the GCash app and go to Load",
+        "image": "prepaid-guide-1-1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "Click Broadband",
+        "image": "prepaid-guide-1-2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "Select PLDT Home Fiber Prepaid",
+        "image": "prepaid-guide-1-3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "Enter your PLDT Home Fiber Prepaid account number",
+        "image": "prepaid-guide-1-4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "Choose your preferred load",
+        "image": "prepaid-guide-1-5.png"
+      },
+      {
+        "label": "Step 6",
+        "text": "Pay Note: Do not load via Bills Payment as it will result to an error.",
+        "image": "prepaid-guide-1-6.png"
+      }
+    ]
+  },
+  {
+    "title": "Top Up Via Maya",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "Log in to Maya account",
+        "image": "prepaid-guide-2-1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "Select More and look for the Shop Menu ( DO NOT load via Maya load or Bills as it will result in an error)",
+        "image": "prepaid-guide-2-2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "Select the Broadband tab",
+        "image": "prepaid-guide-2-3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "Tap PLDT Home Fiber Prepaid",
+        "image": "prepaid-guide-2-4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "Select your preferred load",
+        "image": "prepaid-guide-2-5.png"
+      },
+      {
+        "label": "Step 6",
+        "text": "Enter your Account Number and tap Continue to pay",
+        "image": "prepaid-guide-2-6.png"
+      },
+      {
+        "label": "Step 7",
+        "text": "Wait for successful payment receipt",
+        "image": "prepaid-guide-2-7.png"
+      }
+    ]
+  },
+  {
+    "title": "Top Up Via Website and Continue As Guest",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "Visit pldthome.com/fiberprepaid.",
+        "image": "prepaid-guide-3-1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "Click ”LOAD HERE”",
+        "image": "prepaid-guide-3-2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "Enter your account number. You may get your account number from your activation or application SMS or email sent by PLDT Home, then click ”Continue as Guest”.",
+        "image": "prepaid-guide-3-3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "Select your preferred load by clicking ”Buy Now”.",
+        "image": "prepaid-guide-3-4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "Click CONTINUE to accept the Terms and Conditions.",
+        "image": "prepaid-guide-3-5.png"
+      },
+      {
+        "label": "Step 6",
+        "text": "Review your order then click ”CHECKOUT”.",
+        "image": "prepaid-guide-3-6.png"
+      },
+      {
+        "label": "Step 7",
+        "text": "Confirm your subscription by entering the 6-digit OTP sent via SMS or email.",
+        "image": "prepaid-guide-3-7.png"
+      },
+      {
+        "label": "Step 8",
+        "text": "Review the details of your order carefully then click the ”Pay with” box.",
+        "image": "prepaid-guide-3-8.png"
+      },
+      {
+        "label": "Step 9",
+        "text": "Select your preferred payment method.",
+        "image": "prepaid-guide-3-9.png"
+      },
+      {
+        "label": "Step 10",
+        "text": "If you select Maya, scan the QR or log in to pay.",
+        "image": "prepaid-guide-3-10.png"
+      },
+      {
+        "label": "Step 10.1",
+        "text": "Click Continue. Click \"Pay now\". Wait for \"Payment Successful\" confirmation.",
+        "image": "prepaid-guide-3-11.png"
+      },
+      {
+        "label": "Step 11",
+        "text": "View payment confirmation.",
+        "image": "prepaid-guide-3-12.png"
+      },
+      {
+        "label": "Step 12",
+        "text": "Check successful purchase notification via SMS and email.",
+        "image": "prepaid-guide-3-13.png"
+      },
+      {
+        "label": "Step 13",
+        "text": "Check your recent purchase in the account overview page.",
+        "image": "prepaid-guide-3-14.png"
+      }
+    ]
+  },
+  {
+    "title": "Create New MyHome Account",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "Go to pldthome.com and click ”Account Login”.",
+        "image": "prepaid-guide-4-1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "Click ”Create Account”.",
+        "image": "prepaid-guide-4-2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "Fill out the registration form and click ”Register”.",
+        "image": "prepaid-guide-4-3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "A confirmation email will be sent to you.",
+        "image": "prepaid-guide-4-4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "View the myHome registration validation email.",
+        "image": "prepaid-guide-4-5.png"
+      },
+      {
+        "label": "Step 6",
+        "text": "Click the ”Click here to validate account” link within 24 hours upon receiving the validation email.",
+        "image": "prepaid-guide-4-6.png"
+      },
+      {
+        "label": "Step 7",
+        "text": "You will be forwarded to the myHome account registration success page. Click on ”Continue” afterwards.",
+        "image": "prepaid-guide-4-7.png"
+      },
+      {
+        "label": "Step 8",
+        "text": "By clicking ”Continue,”, you will be logged in to PLDT myHome and can begin linking their Fiber Prepaid account number.",
+        "image": "prepaid-guide-4-8.png"
+      }
+    ]
+  },
+  {
+    "title": "Link your New Account Number to your existing MyHome Account",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "Create your PLDT myHome account or log-in.",
+        "image": "prepaid-guide-5-1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "Link your new account number. You may review your account number from your activation or application email or SMS sent by PLDT Home.",
+        "image": "prepaid-guide-5-2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "Enter the One-Time Passcode (OTP) sent via SMS or email to validate your account.",
+        "image": "prepaid-guide-5-3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "Click ”Packages and Subscriptions”.",
+        "image": "prepaid-guide-5-4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "Under ”My Packages”, look for Fiber Prepaid then click ”GO”",
+        "image": "prepaid-guide-5-5.png"
+      },
+      {
+        "label": "Step 6",
+        "text": "Click ”BUY TOP UPS”",
+        "image": "prepaid-guide-5-6.png"
+      },
+      {
+        "label": "Step 7",
+        "text": "Select your preferred load by clicking ”Buy Now”.",
+        "image": "prepaid-guide-5-7.png"
+      },
+      {
+        "label": "Step 8",
+        "text": "Click \"Continue\" to accept the Terms and Conditions.",
+        "image": "prepaid-guide-5-8.png"
+      },
+      {
+        "label": "Step 9",
+        "text": "Review you order then click \"Check-Out\" and pay.",
+        "image": "prepaid-guide-5-9.png"
+      },
+      {
+        "label": "Step 10",
+        "text": "Confirm your subscription by entering the 6-digit OTP sent via SMS or email.",
+        "image": "prepaid-guide-5-10.png"
+      },
+      {
+        "label": "Step 11",
+        "text": "Review the details of your order carefully then click ”Pay with” box.",
+        "image": "prepaid-guide-5-11.png"
+      },
+      {
+        "label": "Step 12",
+        "text": "Select your preferred payment method.",
+        "image": "prepaid-guide-5-12.png"
+      },
+      {
+        "label": "Step 13",
+        "text": "If you select Maya, scan the QR or log in to pay.",
+        "image": "prepaid-guide-5-13.png"
+      },
+      {
+        "label": "Step 13.1",
+        "text": "Click Continue Click Pay Now Wait for Payment Successful confirmation",
+        "image": "prepaid-guide-5-14.png"
+      },
+      {
+        "label": "Step 14",
+        "text": "View for payment confirmation.",
+        "image": "prepaid-guide-5-15.png"
+      },
+      {
+        "label": "Step 15",
+        "text": "Check successful purchase notification via SMS and email.",
+        "image": "prepaid-guide-5-16.png"
+      },
+      {
+        "label": "Step 16",
+        "text": "Check your recent purchase in account overview page.",
+        "image": "prepaid-guide-5-17.png"
+      }
+    ]
+  },
+  {
+    "title": "Create New MyHome Account Via Pre-registration",
+    "steps": [
+      {
+        "label": "Step 1",
+        "text": "Check your pre-registration email or SMS and click the top up link ot visit pldthome.info/prepaidload",
+        "image": "prepaid-guide-6-1.png"
+      },
+      {
+        "label": "Step 2",
+        "text": "Enter your account number that you can find in the activation and/or application email or SMS then click ”Continue as Guest”",
+        "image": "prepaid-guide-6-2.png"
+      },
+      {
+        "label": "Step 3",
+        "text": "Select your preferred load then click ”Buy Now”",
+        "image": "prepaid-guide-6-3.png"
+      },
+      {
+        "label": "Step 4",
+        "text": "Accept the Terms and Conditions",
+        "image": "prepaid-guide-6-4.png"
+      },
+      {
+        "label": "Step 5",
+        "text": "Proceed to Checkout",
+        "image": "prepaid-guide-6-5.png"
+      },
+      {
+        "label": "Step 6",
+        "text": "Confirm your subscription by entering the One-Time Password (OTP) sent to your email or mobile number then click ”Submit”",
+        "image": "prepaid-guide-6-6.png"
+      },
+      {
+        "label": "Step 7",
+        "text": "Review your order.",
+        "image": "prepaid-guide-6-7.png"
+      },
+      {
+        "label": "Step 8",
+        "text": "Pay using QR code or debit/credit card.",
+        "image": "prepaid-guide-6-8.png"
+      },
+      {
+        "label": "Step 9",
+        "text": "Complete your order and wait for the payment confirmation.",
+        "image": "prepaid-guide-6-9.png"
+      },
+      {
+        "label": "Step 10",
+        "text": "Payment confirmation will be sent to your email.",
+        "image": "prepaid-guide-6-10.png"
+      },
+      {
+        "label": "Step 11",
+        "text": "Check your pre-registration email and click ”Nominate Password”.",
+        "image": "prepaid-guide-6-11.png"
+      },
+      {
+        "label": "Step 12",
+        "text": "Create your own password, accept the Terms and Conditions, then click \"Activate your account\".",
+        "image": "prepaid-guide-6-12.png"
+      },
+      {
+        "label": "Step 13",
+        "text": "Your MyHome account is now ready and activated.",
+        "image": "prepaid-guide-6-13.png"
+      }
+    ]
+  }
+]

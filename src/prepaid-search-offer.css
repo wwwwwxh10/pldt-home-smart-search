@@ -1,0 +1,34 @@
+.search-feature--prepaid { overflow: hidden; border: 1px solid #dedede; border-radius: 8px; background: #fff; box-shadow: 0 4px 14px #0000000c; }
+.search-feature--prepaid .search-feature__topline { min-height: 42px; padding: 0 14px; border-top: 0; background: #fff; }
+.search-feature--prepaid .search-feature__tabs > button { min-height: 42px; padding-block: 9px; border-top: 0; border-bottom: 2px solid transparent; background: transparent; }
+.search-feature--prepaid .search-feature__tabs > button[aria-selected='true'] { border-bottom-color: var(--pldt-red); }
+.search-feature--prepaid .search-feature__panel { padding: 14px 16px 16px; border-bottom: 0; background: #f7f7f7; }
+.prepaid-search-offer__carousel { position: relative; padding: 0 18px; }
+.prepaid-search-offer__track { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 13px 0 5px; }
+.prepaid-search-offer__track::-webkit-scrollbar { display: none; }
+.prepaid-search-offer__card { position: relative; flex: 0 0 calc((100% - 24px) / 3); min-width: 0; min-height: 112px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 12px 13px; border: 1px solid #d8d8d8; border-radius: 7px; background: #fff; scroll-snap-align: start; }
+.prepaid-search-offer__badge { position: absolute; top: -10px; left: 50%; max-width: calc(100% - 14px); transform: translateX(-50%); padding: 4px 8px; border: 1px solid var(--pldt-red); border-radius: 20px; background: #fff; color: var(--pldt-red); font-size: 9px; font-weight: 800; line-height: 1.25; white-space: nowrap; }
+.prepaid-search-offer__badge--new { padding-inline: 10px; background: var(--pldt-red); color: #fff; }
+.prepaid-search-offer__card > strong { color: var(--pldt-red); font-size: 32px; line-height: 1.2; font-weight: 800; letter-spacing: -.8px; white-space: nowrap; }
+.prepaid-search-offer__validity { width: 100%; margin-top: 12px; padding-top: 10px; border-top: 1px solid #e7e7e7; color: #333; font-size: 11px; font-weight: 700; text-align: center; white-space: nowrap; }
+.prepaid-search-offer__footer { min-height: 38px; display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 8px 18px 0; color: #737373; font-size: 11px; line-height: 1.5; }
+.prepaid-search-offer__footer p { margin: 0; }
+.search-feature--prepaid .prepaid-search-offer__cta { flex-shrink: 0; min-width: 122px; min-height: 36px; padding: 7px 12px; }
+.prepaid-search-offer__arrow { position: absolute; z-index: 1; top: 50%; display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; transform: translateY(-50%); padding: 0; border: 1px solid #d3d3d3; border-radius: 50%; background: #fff; box-shadow: 0 2px 7px #00000012; color: var(--pldt-red); cursor: pointer; font-size: 16px; }
+.prepaid-search-offer__arrow--previous { left: 0; }
+.prepaid-search-offer__arrow--next { right: 0; }
+.prepaid-search-offer__arrow:hover:not(:disabled) { border-color: var(--pldt-red); }
+.prepaid-search-offer__arrow:disabled { color: #b8b8b8; background: #fafafa; box-shadow: none; cursor: default; }
+.prepaid-search-offer__arrow:focus-visible { outline: 2px solid var(--pldt-red); outline-offset: 3px; }
+@media (max-width: 1000px) and (min-width: 601px) {
+  .prepaid-search-offer__card { flex-basis: calc((100% - 12px) / 2); }
+}
+@media (max-width: 600px) {
+  .search-feature--prepaid .search-feature__topline { padding-inline: 6px; }
+  .search-feature--prepaid .search-feature__panel { padding: 11px 10px 12px; }
+  .prepaid-search-offer__card { flex-basis: 100%; min-height: 100px; padding: 19px 16px 12px; }
+  .prepaid-search-offer__card > strong { font-size: 29px; }
+  .prepaid-search-offer__validity { margin-top: 9px; padding-top: 8px; font-size: 10px; }
+  .prepaid-search-offer__footer { min-height: 0; gap: 8px; padding: 6px 8px 0; font-size: 10px; }
+  .search-feature--prepaid .prepaid-search-offer__cta { min-width: 104px; min-height: 34px; padding: 6px 9px; font-size: 10px; }
+}

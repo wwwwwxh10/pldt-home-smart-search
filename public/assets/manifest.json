@@ -1,0 +1,301 @@
+{
+  "assets": [
+    {
+      "contentType": "image/png",
+      "id": "7874822f2434b5ef",
+      "kind": "image",
+      "name": "pldt-logo-size-optimized.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/7874822f2434b5ef.png",
+      "url": "https://www.pldthome.com/images/default-source/navbar-update-072023/pldt-logo-size-optimized.png"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "56c989e49a9dbf8e",
+      "kind": "image",
+      "name": "menu-homeinternet.svg",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/56c989e49a9dbf8e.svg",
+      "url": "https://pldthome.com/docs/default-source/2025-files/navbar/menu-homeinternet.svg"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "111cbe600c8be43a",
+      "kind": "image",
+      "name": "menu-entertainment.svg",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/111cbe600c8be43a.svg",
+      "url": "https://pldthome.com/docs/default-source/2025-files/navbar/menu-entertainment.svg"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "b78cc6da3af0a405",
+      "kind": "image",
+      "name": "menu-homebiz-internet.svg",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/b78cc6da3af0a405.svg",
+      "url": "https://pldthome.com/docs/default-source/2025-files/navbar/menu-homebiz-internet.svg"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "c5fa9c6bdd7c6869",
+      "kind": "image",
+      "name": "menu-connectivity.svg",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/c5fa9c6bdd7c6869.svg",
+      "url": "https://pldthome.com/docs/default-source/2025-files/navbar/menu-connectivity.svg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "6390153b1257143c",
+      "kind": "image",
+      "name": "PLDTRewardsIcon.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/6390153b1257143c.png",
+      "url": "https://www.pldthome.com/assets/images/newnav/PLDTRewardsIcon.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "38099d446458e210",
+      "kind": "image",
+      "name": "noun_User_3807056.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/38099d446458e210.png",
+      "url": "https://www.pldthome.com/assets/images/newnav/noun_User_3807056.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "16c7b7b489288790",
+      "kind": "image",
+      "name": "menu-smart0805387060a76f15a26fff000085f869.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/16c7b7b489288790.png",
+      "url": "https://pldthome.com/docs/default-source/2025-files/navbar/menu-smart0805387060a76f15a26fff000085f869.png"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "a40582f3ba6cc37c",
+      "kind": "image",
+      "name": "menu-health.svg",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/a40582f3ba6cc37c.svg",
+      "url": "https://pldthome.com/docs/default-source/navbar/menu-health.svg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "5149a8c115d580a6",
+      "kind": "image",
+      "name": "fiber.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/5149a8c115d580a6.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/logos/fiber/fiber.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "2b44fc27f8982ab6",
+      "kind": "image",
+      "name": "banner-homepage-mobile.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/2b44fc27f8982ab6.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-promo-assets/09/fiber-sale/banner-homepage-mobile.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "db300e38c9157ff7",
+      "kind": "image",
+      "name": "logo-1.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/db300e38c9157ff7.png",
+      "url": "https://www.pldthome.com/images/default-source/default-album/logo-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "851bb559d01a3d2a",
+      "kind": "image",
+      "name": "homepage-banner-mobile-(5).png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/851bb559d01a3d2a.png",
+      "url": "https://www.pldthome.com/images/default-source/default-album/homepage-banner-mobile-(5).png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "85edb1d731dcb6f7",
+      "kind": "image",
+      "name": "pldt-fiberprepaid-onwhitebg.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/85edb1d731dcb6f7.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/logos/prepaid/pldt-fiberprepaid-onwhitebg.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "a66e7d6a05530dea",
+      "kind": "image",
+      "name": "headline-v2.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/a66e7d6a05530dea.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/fiber-prepaid/0206/headline-v2.png"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "afee581fef68cc89",
+      "kind": "image",
+      "name": "banner-homepage-mobile.jpg",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/afee581fef68cc89.jpg",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/fiber-prepaid/0206/banner-homepage-mobile.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "ff0c178c9b11c175",
+      "kind": "image",
+      "name": "internet@2x.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/ff0c178c9b11c175.png",
+      "url": "https://www.pldthome.com/images/default-source/homepage-layout/files/internet@2x.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "ea6555a56fcec82f",
+      "kind": "image",
+      "name": "quicklink-3-promos-2x.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/ea6555a56fcec82f.png",
+      "url": "https://www.pldthome.com/images/default-source/2025-page-assets/homepage/quicklink-3-promos-2x.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "6c6bd1b27dbd0ba3",
+      "kind": "image",
+      "name": "pldth-life-mwell-logo.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/6c6bd1b27dbd0ba3.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/mwell/0929/pldth-life-mwell-logo.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "ce672b4080bf785a",
+      "kind": "image",
+      "name": "banner-homepage-mobile.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/ce672b4080bf785a.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/mwell/1002/banner-homepage-mobile.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "a497058ebf4be7b9",
+      "kind": "image",
+      "name": "hbomax-logo.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/a497058ebf4be7b9.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/hbo/0721/hbomax-logo.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "d45c9b4263df107d",
+      "kind": "image",
+      "name": "banner-homepage-mobile.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/d45c9b4263df107d.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/hbo/0721/banner-homepage-mobile.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "a6e0a8f9dd9d17e1",
+      "kind": "image",
+      "name": "streamtvplus-onblack.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/a6e0a8f9dd9d17e1.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/logos/streamtv/plus/streamtvplus-onblack.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "466991569a670697",
+      "kind": "image",
+      "name": "homepage_banner-mobile.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/466991569a670697.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/streamtv/0616/homepage_banner-mobile.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "b266b299a7e00e2c",
+      "kind": "image",
+      "name": "support-image@2x.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/b266b299a7e00e2c.png",
+      "url": "https://www.pldthome.com/images/default-source/homepage-layout/files/support-image@2x.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "8f37b9752d233c37",
+      "kind": "image",
+      "name": "tile-company-2x.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/8f37b9752d233c37.png",
+      "url": "https://www.pldthome.com/images/default-source/2025-page-assets/homepage/tiles/tile-company-2x.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "8379d4d9038cb244",
+      "kind": "image",
+      "name": "facebook.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/8379d4d9038cb244.png",
+      "url": "https://www.pldthome.com/assets/images/social/facebook.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "86c45fc5ed206f7f",
+      "kind": "image",
+      "name": "twitter.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/86c45fc5ed206f7f.png",
+      "url": "https://www.pldthome.com/assets/images/social/twitter.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "e0536446d0f68107",
+      "kind": "image",
+      "name": "instagram.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/e0536446d0f68107.png",
+      "url": "https://www.pldthome.com/assets/images/social/instagram.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "bdcb4172201de617",
+      "kind": "image",
+      "name": "youtube.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/bdcb4172201de617.png",
+      "url": "https://www.pldthome.com/assets/images/social/youtube.png"
+    },
+    {
+      "contentType": "image/x-icon",
+      "id": "6355041668ebee6d",
+      "kind": "image",
+      "name": "pldticon.ico",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/6355041668ebee6d.ico",
+      "url": "https://www.pldthome.com/assets/images/pldticon.ico?v=061316"
+    },
+    {
+      "contentType": "image/png",
+      "id": "2c555ab0f16a6563",
+      "kind": "image",
+      "name": "banner-homepage-desktop.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/2c555ab0f16a6563.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-promo-assets/09/fiber-sale/banner-homepage-desktop.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "9078c148963de7b1",
+      "kind": "image",
+      "name": "banner-homepage-desktop.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/9078c148963de7b1.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/mwell/1002/banner-homepage-desktop.png"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "633da5576edc33dc",
+      "kind": "image",
+      "name": "banner-homepage-desktop.jpg",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/633da5576edc33dc.jpg",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/fiber-prepaid/0206/banner-homepage-desktop.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "d9ec61b17da18ec7",
+      "kind": "image",
+      "name": "homepage-banner-(2).png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/d9ec61b17da18ec7.png",
+      "url": "https://www.pldthome.com/images/default-source/default-album/homepage-banner-(2).png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "134c1516808cd13b",
+      "kind": "image",
+      "name": "banner-homepage-desktop.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/134c1516808cd13b.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/hbo/0721/banner-homepage-desktop.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "60234d98bae2a7d0",
+      "kind": "image",
+      "name": "homepage_banner-desktop.png",
+      "path": "/var/folders/yj/ff0205n13hl3w5wxk58b3qdr0000gn/T/browser-use/assets/6e296be5-91d0-4ed2-87b9-2c18c7b55b54/60234d98bae2a7d0.png",
+      "url": "https://www.pldthome.com/images/default-source/2026-page-assets/streamtv/0616/homepage_banner-desktop.png"
+    }
+  ],
+  "failures": []
+}
