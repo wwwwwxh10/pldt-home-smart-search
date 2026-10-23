@@ -18,7 +18,12 @@
 .search-feature__new { color: var(--pldt-red); font-size: 8px; line-height: 1; font-weight: 800; }
 .search-feature__tab-badge { padding: 3px 5px; border: 1px solid currentColor; border-radius: 3px; color: var(--pldt-red); font-size: 8px; font-weight: 700; line-height: 1.3; letter-spacing: .15px; }
 .search-feature__panel { padding: 24px 0 22px; border-bottom: 1px solid #e8e8e8; }
-.search-feature--prepaid .search-feature__panel { background: transparent; }
+.search-feature--prepaid .search-feature__panel { padding-top: 0; background: transparent; }
+.search-feature--prepaid .search-feature__topline { border: 1px solid #dedede; border-bottom: 0; border-radius: 9px 9px 0 0; }
+.search-feature--prepaid .search-feature__panel { padding-bottom: 0; border: 1px solid #dedede; border-top: 0; border-radius: 0 0 9px 9px; }
+.search-feature--prepaid .search-feature__topline { background: #fff; }
+.search-feature--prepaid .search-feature__tabs > button { border-top: 0; border-bottom: 3px solid transparent; background: #fff; }
+.search-feature--prepaid .search-feature__tabs > button[aria-selected='true'] { border-top-color: transparent; border-bottom-color: var(--pldt-red); background: #fff; }
 .search-feature h3 { margin: 0; color: #292929; font-size: 19px; font-weight: 700; line-height: 1.4; }
 .search-feature__price { display: flex; align-items: baseline; gap: 4px; margin: 12px 0 8px; line-height: 1.1; white-space: nowrap; }
 .search-feature__price strong { color: var(--pldt-red); font-size: 36px; font-weight: 800; letter-spacing: -1.4px; }
