@@ -42,8 +42,8 @@
 .search-feature__actions { display: flex; flex-direction: column; align-items: flex-end; gap: 13px; }
 .search-feature__cta { width: fit-content; max-width: 100%; min-height: 40px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 10px 14px; border: 1px solid var(--pldt-red); border-radius: 6px; background: var(--pldt-red); color: #fff; font-size: 12px; font-weight: 700; line-height: 1.5; white-space: nowrap; box-shadow: 0 3px 8px #cb30331a; }
 .search-feature__cta:hover { border-color: var(--pldt-deep-red); background: var(--pldt-deep-red); color: #fff; }
-.search-feature__cta--unavailable { border-color: #c9c9c9; background: #fff; color: #6a6a6a; box-shadow: none; }
-.search-feature__cta--unavailable:hover { border-color: #999; background: #f7f7f7; color: #444; }
+.search-feature__cta--unavailable,
+.search-feature__cta--unavailable:hover { border-color: #dedede; background: #ededed; color: #767676; box-shadow: none; cursor: not-allowed; }
 .search-feature__note { padding: 11px 0 0; color: #737373; font-size: 10px; line-height: 1.6; }
 .search-prepaid-offer { display: flex; flex-direction: column; gap: 18px; }
 .search-prepaid-offer__loads { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; }

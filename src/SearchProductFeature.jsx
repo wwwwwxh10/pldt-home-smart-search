@@ -109,9 +109,15 @@ function DeviceFeature({ product }) {
         <p className="search-feature__price"><strong>{product.price}</strong><span>/mo*</span></p>
         <span className="search-device-offer__term">Locked in {product.term}</span>
         <span className="search-device-offer__cash">or {product.cash}</span>
-        <a className={`search-feature__cta ${product.outOfStock ? 'search-feature__cta--unavailable' : ''}`} href={product.href} target="_blank" rel="noreferrer">
-          {product.outOfStock ? 'OUT OF STOCK' : 'GET IT NOW'}{!product.outOfStock && <IconRight aria-hidden="true" />}
-        </a>
+        {product.outOfStock ? (
+          <button className="search-feature__cta search-feature__cta--unavailable" type="button" disabled>
+            OUT OF STOCK
+          </button>
+        ) : (
+          <a className="search-feature__cta" href={product.href} target="_blank" rel="noreferrer">
+            GET IT NOW<IconRight aria-hidden="true" />
+          </a>
+        )}
       </div>
     </div>
   );
