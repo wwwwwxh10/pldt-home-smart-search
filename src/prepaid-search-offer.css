@@ -1,4 +1,4 @@
-.prepaid-search-offer { padding: 0; border: 0; border-radius: 0; background: #f7f7f7; overflow: hidden; }
+.prepaid-search-offer { padding: 0; border: 0; border-radius: 0; background: #fbfbfb; overflow: hidden; }
 .prepaid-search-offer__carousel { display: flex; align-items: center; gap: 10px; padding: 34px 20px 16px; }
 .prepaid-search-offer__track { display: flex; gap: 14px; min-width: 0; overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; flex: 1; }
 .prepaid-search-offer__track::-webkit-scrollbar { display: none; }
