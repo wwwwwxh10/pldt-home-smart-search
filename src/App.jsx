@@ -1,10 +1,11 @@
 import React, { useEffect, useId, useMemo, useRef, useState } from 'react';
-import { Breadcrumb, Button, Carousel, Checkbox, Empty, Input, Pagination } from '@arco-design/web-react';
+import { Breadcrumb, Button, Carousel, Checkbox, Empty, Input, Pagination, Popover } from '@arco-design/web-react';
 import {
   IconClose,
   IconDelete,
   IconDown,
   IconBulb,
+  IconLink,
   IconLocation,
   IconMenu,
   IconRight,
@@ -111,18 +112,18 @@ function buildAiOverview(query, results) {
   const lowerQuery = query.toLowerCase();
   const topResults = results.slice(0, 3);
   if (normalizedQuery === FIBER_PLAN_RECOMMENDATION_QUERY) {
-    const sources = ['/fiber', '/plan-recommender']
+    const [fiberSource, recommenderSource] = ['/fiber', '/plan-recommender']
       .map((href) => SITE_PAGES.find((page) => page.href === href))
       .filter(Boolean);
 
     return {
       intro: 'For most multi-device homes, Fiber Unli 1699 is the best place to start: PLDT currently marks it as the most popular option, with up to 300 Mbps at ₱1,699 per month. Your ideal plan still depends on your household size and online activities.',
+      introSource: fiberSource,
       bullets: [
-        ...FIBER_PLANS.map((plan) => `${plan.name} — ${plan.price} per month for up to ${plan.speed}. ${plan.bestFor}`),
-        'All three plans include unlimited fiber internet and a landline with Unli Calls. The current offer also lists free installation and activation, while the 1699 and 2099 plans include a free one-year IGV Game Pass.',
-        'Choose 1299 for value, 1699 for the strongest balance of speed and price, or 2099 when many people regularly stream, game, join video calls, and download large files at the same time. Service availability, final fees, and promo eligibility depend on your address and application.',
+        ...FIBER_PLANS.map((plan) => ({ text: `${plan.name} — ${plan.price} per month for up to ${plan.speed}. ${plan.bestFor}`, source: fiberSource })),
+        { text: 'All three plans include unlimited fiber internet and a landline with Unli Calls. The current offer also lists free installation and activation, while the 1699 and 2099 plans include a free one-year IGV Game Pass.', source: fiberSource },
+        { text: 'Choose 1299 for value, 1699 for the strongest balance of speed and price, or 2099 when many people regularly stream, game, join video calls, and download large files at the same time. Service availability, final fees, and promo eligibility depend on your address and application.', source: recommenderSource },
       ],
-      sources,
     };
   }
 
@@ -137,8 +138,7 @@ function buildAiOverview(query, results) {
 
   return {
     intro,
-    bullets: topResults.map((result) => `${result.title}: ${searchSummary(result).replace(/\.$/, '')}.`),
-    sources: topResults,
+    bullets: topResults.map((result) => ({ text: `${result.title}: ${searchSummary(result).replace(/\.$/, '')}.`, source: result })),
   };
 }
 
@@ -319,6 +319,33 @@ function SearchResultLink({ result, query, onNavigate }) {
   );
 }
 
+function SummaryCitation({ source, onNavigate }) {
+  if (!source) return null;
+  const href = canonicalSearchHref(source);
+  const displayUrl = new URL(href, 'https://pldthome.com').href.replace(/^https?:\/\//, '');
+  return (
+    <Popover
+      className="ai-source-popover"
+      position="top"
+      trigger={['hover', 'focus']}
+      triggerProps={{ mouseEnterDelay: 120, mouseLeaveDelay: 120 }}
+      escToClose
+      content={
+        <LocalLink className="ai-source-preview" href={href} onNavigate={onNavigate}>
+          <strong>{source.title}</strong>
+          <span><IconLink aria-hidden="true" /><span>{displayUrl}</span><IconRight aria-hidden="true" /></span>
+        </LocalLink>
+      }
+    >
+      <span>
+        <LocalLink className="ai-summary__citation" href={href} onNavigate={onNavigate} aria-label={`View source: ${source.title}`}>
+          <IconLink aria-hidden="true" />
+        </LocalLink>
+      </span>
+    </Popover>
+  );
+}
+
 function StreamingSummary({ overview, onNavigate }) {
   const [feedback, setFeedback] = useState(null);
   const [visibleCharacters, setVisibleCharacters] = useState(0);
@@ -327,8 +354,8 @@ function StreamingSummary({ overview, onNavigate }) {
   const bodyRef = useRef(null);
   const contentRef = useRef(null);
   const bodyId = useId();
-  const blocks = [overview.intro, ...overview.bullets];
-  const totalCharacters = blocks.reduce((total, block) => total + block.length, 0);
+  const blocks = [{ text: overview.intro, source: overview.introSource }, ...overview.bullets];
+  const totalCharacters = blocks.reduce((total, block) => total + block.text.length, 0);
   const finished = visibleCharacters >= totalCharacters;
 
   useEffect(() => {
@@ -363,9 +390,9 @@ function StreamingSummary({ overview, onNavigate }) {
 
   let remainingCharacters = visibleCharacters;
   const visibleBlocks = blocks.map((block) => {
-    const visible = block.slice(0, Math.max(0, remainingCharacters));
-    remainingCharacters -= block.length;
-    return visible;
+    const text = block.text.slice(0, Math.max(0, remainingCharacters));
+    remainingCharacters -= block.text.length;
+    return { text, source: text.length === block.text.length ? block.source : null };
   });
 
   return (
@@ -377,8 +404,8 @@ function StreamingSummary({ overview, onNavigate }) {
       <div className="ai-summary__preview">
         <div ref={bodyRef} id={bodyId} className="ai-summary__body" role="region" aria-label={expanded ? 'Full AI summary' : 'AI summary preview'} aria-busy={!finished}>
           <div ref={contentRef}>
-            {visibleBlocks[0] && <p>{visibleBlocks[0]}</p>}
-            {visibleBlocks.some((block, index) => index > 0 && block) && <ul>{visibleBlocks.slice(1).map((block, index) => block && <li key={index}>{block}</li>)}</ul>}
+            {visibleBlocks[0].text && <p>{visibleBlocks[0].text}<SummaryCitation source={visibleBlocks[0].source} onNavigate={onNavigate} /></p>}
+            {visibleBlocks.some((block, index) => index > 0 && block.text) && <ul>{visibleBlocks.slice(1).map((block, index) => block.text && <li key={index}>{block.text}<SummaryCitation source={block.source} onNavigate={onNavigate} /></li>)}</ul>}
             {!finished && <span className="ai-summary__cursor" aria-hidden="true" />}
           </div>
         </div>
@@ -397,7 +424,6 @@ function StreamingSummary({ overview, onNavigate }) {
         )}
       </div>
       <div className="ai-summary__footer">
-        <div className="ai-summary__sources"><span>Sources</span>{overview.sources.map((source, index) => <LocalLink href={source.href} key={source.href} onNavigate={onNavigate}><b>[{index + 1}]</b> {source.title}</LocalLink>)}</div>
         <small>AI-generated content. For reference only.</small>
         {finished && <span className="ai-feedback" aria-label="Rate this summary">
           <Button type="text" icon={<IconThumbUp />} iconOnly title="Helpful" className={feedback === 'up' ? 'selected' : ''} aria-label="Helpful" aria-pressed={feedback === 'up'} onClick={() => setFeedback(feedback === 'up' ? null : 'up')} />
